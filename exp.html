@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Young's Double Slit Simulation</title>
+  <link rel="stylesheet" href="exp.css">
+</head>
+
+<body>
+   <div class="navigation">
+    <div class="left">
+      <a href="index.html">Creativee</a>
+    </div>
+    <div class="right">
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+   </div>
+   <div class="head">
+     <h1>Simulation of Young's Double Slit Experiment</h1>
+     <p>
+      This simulation demonstrates Young's Double-Slit Experiment by contrasting classical particles with wave behavior. In particle mode, discrete units bounce off barriers or pass straight through. In wave mode, expanding wavefronts pass through the slits, illustrating wave propagation, absorption upon barrier impact, and interference dynamics across the screen. </p>
+   </div>
+  
+  <canvas id='simcanvas' width='340' height='400'></canvas>
+
+  <div class="controls">
+    <button id="modeBtn" onclick="switchMode()">Current Mode: Particle Simulation</button>
+  </div>
+
+  <script src="exp.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+
+  *{
+    margin:0;
+    padding:0;
+    font-weight:bold;
+  }
+ .navigation{
+   width:100%;
+   background-color: white;
+   height:8.5vh;
+   display:flex;
+   justify-content:space-between;
+   align-items: center;
+   position:sticky;
+   top:0;
+ }
+ .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width:200px;
+}
+.left{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100%;
+  text-align:center;
+}
+.right{
+  height:100%;
+}
+.right ul{
+   display:flex;
+   flex-direction:row;
+   justify-content:center;
+   align-items: center;
+ }
+.right ul li {
+  list-style: none;
+  padding:2px 5px;
+  background-color:white;
+}
+.left a{
+  color: black;
+  text-decoration: none;
+  font-size:1.4rem;
+}
+.navigation ul li a{
+  text-decoration: none;
+  color:black;
+  background-color:white ;
+  font-size:1rem;
+  
+}
+  body{
+    background-color:rgba(233, 233, 233, 1);
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    width:100vw;
+    position:relative;
+  }
+  .parent{
+     margin:1rem 1rem 1rem 1rem;
+     margin-right:1rem;
+     padding:0.7rem 0.7rem 0.7rem 0.7rem;
+     border-radius:10px;
+     background-color:white;
+     max-width:300px;
+   }
+  img{
+     max-width:100%;
+     height:auto;
+     border-radius:10px;
+     display:block;
+   }
+ .spans span{
+    border:0.1px solid grey;
+    border-radius:3px;
+    margin:2px;
+    padding:2px;
+    background-color:rgba(247, 247, 247, 1);
+    color:grey;
+    font-size:0.2rem;
+   }
+  p{
+    color:rgba(192, 192, 192, 1);
+   }
+ .spans{
+   padding:2px 2px 2px 2px;
+ }
+.button{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+}
+.button button{
+  border:none;
+  border-radius:3px;
+  padding:3px 3px 3px 3px;
+  color:#4387FF;
+  background-color:#E4EEFF;
+  margin-top:1rem;
+}
+.main{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+}
+.introcontainer{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  height:40dvh;
+  width:80dvw;
+  margin:10rem;
+  padding:0.7rem 0.7rem 0.7rem 0.7rem;
+  background-color:white;
+  border-radius:10px;
+  
+}
+.intro{
+  width:100%;
+  border:2px solid black;
+  
+  
+}
