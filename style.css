@@ -17,7 +17,7 @@
   --backgroundcolor: #010233;
   --bgchild: rgba(184, 184, 184, 0.17);
   --navcolor: #000119;
-  --blur:205px;
+  --blur: 4;
 }
 
 * {
@@ -111,8 +111,8 @@ body {
   border-radius: 10px;
   background-color: var(--bgchild);
   max-width: 300px;
-  backdrop-filter: blur(--blur);
-  -webkit-backdrop-filter: blur(--blur);
+  backdrop-filter: blur(calc(var(--blur) * 1px));
+  -webkit-backdrop-filter: blur(calc(var(--blur) * 1px));
 }
 
 img {
@@ -128,8 +128,8 @@ img {
   margin: 2px;
   padding: 2px;
   background-color: var(--bgchild);
-  backdrop-filter: blur(--blur);
-  -webkit-backdrop-filter: blur(--blur);
+  backdrop-filter: blur(calc(var(--blur) * 1px));
+  -webkit-backdrop-filter: blur(calc(var(--blur) * 1px));
   color: var(--fontcolor);
   font-size: 0.2rem;
 }
@@ -154,8 +154,8 @@ p {
   padding: 3px 3px 3px 3px;
   margin-top: 1rem;
   background-color: var(--bgchild);
-  backdrop-filter: blur(--blur);
-  -webkit-backdrop-filter: blur(--blur);
+  backdrop-filter: blur(calc(var(--blur) * 1px));
+  -webkit-backdrop-filter: blur(calc(var(--blur) * 1px));
   color: var(--fontcolor);
   border: 0.1px solid grey;
 }
@@ -168,8 +168,8 @@ p {
 
 .introcontainer {
   background-color: var(--bgchild);
-  backdrop-filter: blur(--blur);
-  -webkit-backdrop-filter: blur(--blur);
+  backdrop-filter: blur(calc(var(--blur) * 1px));
+  -webkit-backdrop-filter: blur(calc(var(--blur) * 1px));
   border: none;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
   display: flex;
@@ -212,6 +212,8 @@ p {
 }
 
 .soli {
+  padding:6px;
+  border-radius: 5px;
   background-color: var(--bgchild);
   color: var(--fontcolor);
 }
@@ -270,18 +272,24 @@ body {}
 }
 
 .lhs {
-  height: 91dvh;
+  height: 89dvh;
   width: 15%;
   background-color: var(--bgchild);
-  backdrop-filter: blur(--blur);
-  -webkit-backdrop-filter: blur(--blur);
+  backdrop-filter: blur(calc(var(--blur) * 1px));
+  -webkit-backdrop-filter: blur(calc(var(--blur) * 1px));
   position: fixed;
-  top: 8.5vh;
+  top: 9.2vh;
   z-index: 4;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-radius:1rem;
+  padding:0.15rem;
+  padding-top:0.25rem;
+}
+.lhs a{
+  pointer-events: auto;
 }
 
 .rhs {
