@@ -41,7 +41,18 @@ body {
   z-index: -1;
   min-height:100dvh;
 }
-
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh; /* Uses 100dvh instead of 100vh */
+  background: url('image.jpg') center center / cover no-repeat;
+  z-index: -1;
+  transform: translateZ(0); /* Forces GPU layer to eliminate drag stutter in Chrome */
+  will-change: transform;
+}
 
 .navigation {
   width: 100%;
