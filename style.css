@@ -15,7 +15,7 @@
 :root {
   --fontcolor: #FFFFFF;
   --backgroundcolor: #010233;
-  --bgchild: rgba(184, 184, 184, 0.37);
+  --bgchild: rgba(184, 184, 184, 0.17);
   --navcolor: #000119;
   --blur:205px;
 }
@@ -38,6 +38,8 @@ body {
   align-items: center;
   width: 100vw;
   position: relative;
+  z-index: -1;
+  min-height:100dvh;
 }
 
 
